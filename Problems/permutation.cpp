@@ -14,11 +14,7 @@ int main()
 
 		for(int i=0;i<n;i++) {
 			cin>>arr[i];
-		}
-
-		for(int i=0;i<n;i++) {
 			int temp=arr[i];
-			int a=0;
 			bool t=false;
 			for(int j=0;j<v.size();j++) {
 				if(v[j]==temp) {
@@ -29,6 +25,7 @@ int main()
 				v.push_back(temp);
 			}
 		}
+
 		for(auto i:v) {
 			cout<<i<<" ";
 		}
